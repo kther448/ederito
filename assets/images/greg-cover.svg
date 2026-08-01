@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+<title id="t">Greg Promo project cover</title><desc id="d">Media and promotions website mockup in black, red and white.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090909"/><stop offset="1" stop-color="#341010"/></linearGradient></defs>
+<rect width="1600" height="1000" fill="url(#bg)"/><path d="M1100 0h500v1000H820z" fill="#d72638" opacity=".18"/><g transform="translate(110 90)"><rect width="1380" height="820" rx="30" fill="#101010" stroke="#fff" stroke-opacity=".12"/><rect width="1380" height="76" rx="30" fill="#181818"/><circle cx="40" cy="38" r="8" fill="#f26966"/><circle cx="68" cy="38" r="8" fill="#e9b74b"/><circle cx="96" cy="38" r="8" fill="#61bd83"/>
+<text x="70" y="165" fill="#ff3d4f" font-family="Arial, sans-serif" font-size="30" font-weight="900" letter-spacing="5">GREG PROMO</text>
+<text x="70" y="290" fill="#fff" font-family="Arial, sans-serif" font-size="92" font-weight="900">Your story.</text><text x="70" y="380" fill="#ff3d4f" font-family="Arial, sans-serif" font-size="92" font-weight="900">More visibility.</text>
+<text x="72" y="465" fill="#bdbdbd" font-family="Arial, sans-serif" font-size="28">Media coverage, promotion and booking in one clear experience.</text>
+<rect x="72" y="535" width="235" height="68" rx="34" fill="#ff3d4f"/><text x="126" y="579" fill="#fff" font-family="Arial, sans-serif" font-size="24" font-weight="700">Book coverage</text>
+<g transform="translate(865 155)"><rect width="360" height="520" rx="34" fill="#1c1c1c" stroke="#fff" stroke-opacity=".14"/><circle cx="180" cy="160" r="95" fill="#ff3d4f" opacity=".9"/><path d="M140 120l110 65-110 65z" fill="#fff"/><rect x="45" y="310" width="270" height="18" rx="9" fill="#fff" fill-opacity=".82"/><rect x="45" y="352" width="210" height="16" rx="8" fill="#fff" fill-opacity=".28"/><rect x="45" y="395" width="120" height="70" rx="18" fill="#ff3d4f"/><rect x="180" y="395" width="135" height="70" rx="18" fill="#fff" fill-opacity=".1"/></g>
+</g></svg>

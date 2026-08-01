@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="t d">
+<title id="t">Becoming Training Center project cover</title><desc id="d">Editorial website mockup in cream, navy and teal.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e9f0ec"/><stop offset="1" stop-color="#c9d8d2"/></linearGradient><linearGradient id="hero" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0b2938"/><stop offset="1" stop-color="#123f4d"/></linearGradient></defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<circle cx="1320" cy="100" r="280" fill="#dcae55" opacity=".18"/>
+<g transform="translate(120 92)">
+<rect width="1360" height="816" rx="28" fill="#f9f7ef" stroke="#183949" stroke-opacity=".18"/>
+<rect width="1360" height="70" rx="28" fill="#fffdf7"/><circle cx="40" cy="35" r="8" fill="#ef7c72"/><circle cx="66" cy="35" r="8" fill="#e3b85b"/><circle cx="92" cy="35" r="8" fill="#70ad92"/><rect x="1130" y="24" width="160" height="22" rx="11" fill="#dfe8e5"/>
+<rect y="70" width="1360" height="746" rx="0" fill="url(#hero)"/>
+<text x="82" y="142" fill="#e9d698" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="6">BECOMING</text>
+<text x="82" y="250" fill="#fff" font-family="Georgia, serif" font-size="82" font-weight="700">Develop your potential.</text>
+<text x="82" y="340" fill="#73c9c5" font-family="Georgia, serif" font-size="82" font-style="italic">Transform your life.</text>
+<rect x="82" y="402" width="280" height="64" rx="32" fill="#1b8cac"/><text x="130" y="443" fill="#fff" font-family="Arial, sans-serif" font-size="24" font-weight="700">Explore coaching</text>
+<rect x="870" y="150" width="370" height="520" rx="180" fill="#d8b37a" opacity=".94"/><circle cx="1045" cy="295" r="100" fill="#f2dfc4"/><path d="M910 625c55-150 230-150 280 0" fill="#102e3a"/><rect x="780" y="660" width="470" height="90" rx="18" fill="#f7f3e6"/><text x="820" y="710" fill="#173847" font-family="Arial, sans-serif" font-size="26" font-weight="700">Training • Coaching • Leadership</text>
+</g></svg>

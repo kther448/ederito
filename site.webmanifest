@@ -1,0 +1,9 @@
+{
+  "name":"Ederito Digital Studio",
+  "short_name":"Ederito",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#080808",
+  "theme_color":"#080808",
+  "icons":[{"src":"assets/images/favicon.png","sizes":"512x512","type":"image/png"}]
+}
