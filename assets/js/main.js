@@ -2,7 +2,7 @@
   'use strict';
 
   const SUPABASE_URL = 'https://rsarqljktqecndsfklyf.supabase.co';
-  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJIUzI1NiIsInJlZiI6InJzYXJxbGprdHFlY25kc2ZrbHlmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA1NjMxNDUsImV4cCI6MjA4NjEzOTE0NX0.kzfex4cqxVjrOAMHtxAPVNFmPXtDeaCKqjzOQpTbZco';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJzYXJxbGprdHFlY25kc2ZrbHlmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA1NjMxNDUsImV4cCI6MjA4NjEzOTE0NX0.kzfex4cqxVjrOAMHtxAPVNFmPXtDeaCKqjzOQpTbZco';
   const REVIEW_FIELDS = 'id,name,business_name,rating,review,created_at';
 
   const header = document.querySelector('[data-header]');
