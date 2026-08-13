@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Leave a review for EDERITO." />
+  <meta name="theme-color" content="#10140d" />
+  <title>Reviews — EDERITO</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="review-page">
+  <div class="noise"></div>
+  <header class="site-header compact">
+    <a class="brand" href="index.html"><img src="assets/ederito-logo.svg" alt="EDERITO" /></a>
+    <nav class="desktop-nav"><a href="index.html#services">Services</a><a href="index.html#work">Work</a><a href="index.html#pricing">Pricing</a><a class="active" href="reviews.html">Reviews</a></nav>
+    <a class="header-cta" href="index.html#contact">Start a project <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="review-hero section-shell">
+      <div class="eyebrow"><span class="status-dot"></span> Client reviews</div>
+      <h1>Your experience<br/><em>helps us grow.</em></h1>
+      <p>If EDERITO helped with your logo, website, app, or business launch, share a few words about the experience.</p>
+    </section>
+
+    <section class="review-form-section section-shell">
+      <div class="review-form-intro"><div class="section-kicker">Leave a review</div><h2>Tell future clients<br/>what it was like.</h2><p>Reviews are submitted for approval before appearing publicly. Your email is used only to verify the submission.</p></div>
+      <form class="review-form" id="reviewForm">
+        <div class="form-row"><label>Name<input type="text" name="name" placeholder="Your name" required /></label><label>Business name<input type="text" name="business" placeholder="Business or brand" /></label></div>
+        <label>Email<input type="email" name="email" placeholder="you@example.com" required /></label>
+        <label>Service<select name="service" required><option value="">Select a service</option><option>Logo design</option><option>Website</option><option>Mobile / web app</option><option>LLC filing assistance</option><option>Other</option></select></label>
+        <fieldset class="rating-field"><legend>Your rating</legend><div class="stars" aria-label="Rating"><input type="radio" id="star5" name="rating" value="5" required><label for="star5">★</label><input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label><input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label><input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label><input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label></div></fieldset>
+        <label>Review<textarea name="review" rows="6" placeholder="What did you like about working with EDERITO?" required></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent" required /><span>I give EDERITO permission to publish this review using my name and business name.</span></label>
+        <button class="button button-primary" type="submit">Submit review <span>↗</span></button>
+        <p class="form-note" id="reviewNote">Submission opens your email app. A hosted review database can be connected later without redesigning this page.</p>
+      </form>
+    </section>
+
+    <section class="review-trust section-shell"><div><span>Built with care.</span><h2>Good work should<br/><em>speak for itself.</em></h2></div><a href="index.html#work" class="button button-ghost">View selected work</a></section>
+  </main>
+
+  <footer>
+    <div class="footer-top section-shell"><div class="footer-brand"><img src="assets/ederito-logo.svg" alt="EDERITO" /><p>Creative direction, websites, apps, and launch support for small businesses.</p></div><div class="footer-col"><strong>Explore</strong><a href="index.html#services">Services</a><a href="index.html#work">Work</a><a href="index.html#pricing">Pricing</a></div><div class="footer-col"><strong>Company</strong><a href="index.html#about">About</a><a href="index.html#contact">Start a project</a><a href="mailto:hello@ederito.com">hello@ederito.com</a></div></div>
+    <div class="footer-bottom section-shell"><span>© 2026 Zanara Labs LLC. All rights reserved.</span><span>EDERITO — Design. Build. Launch.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
