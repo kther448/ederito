@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ederito.com/sitemap.xml
