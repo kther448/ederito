@@ -2,10 +2,29 @@ function json(body,status=200){return new Response(JSON.stringify(body),{status,
 function clean(value,max){return String(value??'').trim().slice(0,max)}
 function validEmail(value){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)}
 
+async function verifyTurnstile(token,secret,ip){
+  if(!secret) return {success:false,error:'Turnstile secret is not configured.'};
+  if(!token) return {success:false,error:'Please complete the security check.'};
+  const form=new FormData();
+  form.append('secret',secret);
+  form.append('response',token);
+  if(ip) form.append('remoteip',ip);
+  const response=await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify',{method:'POST',body:form});
+  const result=await response.json();
+  return {success:Boolean(result.success),error:result.success?'':'Security verification failed.'};
+}
+
 export async function onRequestPost(context){
   try{
     const data=await context.request.json();
     if(data.website) return json({message:'Thanks.'});
+
+    const verification=await verifyTurnstile(
+      data['cf-turnstile-response'],
+      context.env.TURNSTILE_SECRET_KEY,
+      context.request.headers.get('CF-Connecting-IP')||''
+    );
+    if(!verification.success) return json({error:verification.error},400);
 
     const name=clean(data.name,100);
     const email=clean(data.email,200);
