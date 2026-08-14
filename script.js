@@ -13,12 +13,16 @@ if(b&&n){
     const open=n.classList.toggle('open');
     b.setAttribute('aria-expanded',String(open));
   };
+  n.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
+    n.classList.remove('open');
+    b.setAttribute('aria-expanded','false');
+  }));
 }
 
 const f=document.getElementById('siteFooter');
 if(f){
   f.className='site-footer';
-  f.innerHTML=`<div><img src="assets/ederito-logo.svg" alt="EDERITO"><p>Independent design and digital support for small businesses.</p></div><div><a href="services.html">Services</a><a href="work.html">Work</a><a href="pricing.html">Pricing</a><a href="reviews.html">Reviews</a></div><div><a href="mailto:contact@ederito.com">contact@ederito.com</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><span>Operated by Zanara Labs LLC</span></div>`;
+  f.innerHTML=`<div><img src="assets/ederito-logo.svg" alt="EDERITO"><p class="footer-cta">Design and digital support for small businesses ready to look established.</p><p>Operated by Zanara Labs LLC.</p></div><div><p class="footer-kicker">Explore</p><a href="services.html">Services</a><a href="work.html">Selected work</a><a href="pricing.html">Pricing</a><a href="reviews.html">Reviews</a><a href="about.html">About</a></div><div><p class="footer-kicker">Start</p><a href="contact.html">Start a project →</a><a href="mailto:contact@ederito.com">contact@ederito.com</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} EDERITO</span><span>Small-business design / web / commerce / product</span></div>`;
 }
 
 async function submit(form,url,status){
@@ -33,6 +37,7 @@ async function submit(form,url,status){
     status.className='form-status success';
     status.textContent=j.message||'Sent.';
     form.reset();
+    if(window.turnstile){try{window.turnstile.reset()}catch(_){}}
   }catch(error){
     status.className='form-status error';
     status.textContent=error.message||'Unable to submit right now.';
